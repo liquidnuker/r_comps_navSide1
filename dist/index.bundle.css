@@ -13,7 +13,7 @@ body, p, blockquote, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, form, field
 .navleft1-02_img-holder {
   padding: 4px; }
 
-.navleft1-01 li, .navleft1-02 li, .navleft1-03 li {
+.navleft1-01 li, .navleft1-02 li, .navleft1-03 li, .navleft1-04 li {
   padding: 6px; }
 
 *,
@@ -821,6 +821,46 @@ body {
   border: 1px solid #000; }
   .navleft1-03_img-holder > img {
     height: 100%; }
+
+.navleft1-04 a {
+  color: #fff;
+  display: block;
+  height: 50px;
+  padding-top: 14px; }
+  .navleft1-04 a:hover {
+    text-decoration: none; }
+
+.navleft1-04 li {
+  background-color: #999;
+  border-bottom: 1px solid #000; }
+  .navleft1-04 li:nth-of-type(odd) {
+    background-color: #666; }
+  .navleft1-04 li:first-of-type {
+    background-color: green; }
+  .navleft1-04 li:last-of-type {
+    border-bottom: none; }
+
+.navleft1-04_img-holder {
+  width: 50px;
+  height: 50px;
+  display: inline;
+  float: left;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  position: relative;
+  text-align: center;
+  border: 1px solid #000; }
+  .navleft1-04_img-holder > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .navleft1-04_img-holder .fa {
+    background-color: #000;
+    width: 20px;
+    height: 20px; }
 
 [class|="col"] {
   position: relative;
