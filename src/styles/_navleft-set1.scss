@@ -109,8 +109,10 @@ body {
   }
 
   li {
+    @extend %padd--6;
+    background-color: #999;
     border-bottom: 1px solid #000;
-    padding: 6px;
+    
 
     &:after,
     &:before {
@@ -119,6 +121,10 @@ body {
 
     &:nth-of-type(odd) {
       background-color: #666;
+    }
+
+    &:first-of-type {
+      background-color: green;
     }
 
     &:last-of-type {
