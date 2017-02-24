@@ -771,13 +771,10 @@ body {
   padding: 6px; }
   .navleft1-02 li:nth-of-type(odd) {
     background-color: #666; }
+  .navleft1-02 li:first-of-type {
+    background-color: pink; }
   .navleft1-02 li:last-of-type {
     border-bottom: none; }
-
-.navleft1-02_title {
-  font-weight: bold;
-  background-color: #000;
-  color: #000; }
 
 .navleft1-02_img-holder {
   width: 50px;
