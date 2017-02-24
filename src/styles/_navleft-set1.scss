@@ -25,7 +25,7 @@ body {
       background-color: #000;  
       height: 34px;
       border-bottom: 1px solid #000;
-      
+
 
       &:nth-of-type(odd) {
         background-color: #666;
@@ -63,7 +63,7 @@ body {
       @extend %padd--6;
       background-color: #ccc;  
       border-bottom: 1px solid #000;
-      
+
       &:nth-of-type(odd) {
         background-color: #666;
       }
@@ -98,3 +98,49 @@ body {
 
 // navleft1-03
 // ==================================================/
+@mixin navleft1-03 {
+.navleft1-03 {
+  a {
+    color: #fff;
+    display: block;
+  }
+  span {
+    color :#fff;
+  }
+
+  li {
+    border-bottom: 1px solid #000;
+    padding: 6px;
+
+    &:after,
+    &:before {
+      @extend %clearfix;
+    }
+
+    &:nth-of-type(odd) {
+      background-color: #666;
+    }
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}    
+
+.navleft1-03_img-holder {
+  width: 50px;
+  height: 50px;
+  display: inline;
+  float: left;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  padding: 4px;
+  border: 1px solid #000;
+
+  > img {
+    height: 100%;
+  }
+}
+}
+
+@include navleft1-03;
