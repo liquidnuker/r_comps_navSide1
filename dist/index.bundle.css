@@ -10,6 +10,12 @@ body, p, blockquote, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, form, field
   margin: 0;
   padding: 0; }
 
+.navleft1-02_img-holder {
+  padding: 4px; }
+
+.navleft1-01 li, .navleft1-02 li {
+  padding: 6px; }
+
 *,
 *:before,
 *:after {
@@ -751,8 +757,7 @@ body {
 .navleft1-01 li {
   background-color: #000;
   height: 34px;
-  border-bottom: 1px solid #000;
-  padding: 6px; }
+  border-bottom: 1px solid #000; }
   .navleft1-01 li:nth-of-type(odd) {
     background-color: #666; }
   .navleft1-01 li:first-of-type {
@@ -765,10 +770,12 @@ body {
   display: block;
   height: 50px;
   padding-top: 14px; }
+  .navleft1-02 a:hover {
+    text-decoration: none; }
 
 .navleft1-02 li {
-  border-bottom: 1px solid #000;
-  padding: 6px; }
+  background-color: #ccc;
+  border-bottom: 1px solid #000; }
   .navleft1-02 li:nth-of-type(odd) {
     background-color: #666; }
   .navleft1-02 li:first-of-type {
@@ -783,7 +790,6 @@ body {
   float: left;
   margin-bottom: 4px;
   margin-right: 4px;
-  padding: 4px;
   border: 1px solid #000; }
   .navleft1-02_img-holder > img {
     height: 100%; }

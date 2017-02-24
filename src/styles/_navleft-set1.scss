@@ -21,10 +21,11 @@ body {
     }
 
     li {
+      @extend %padd--6;
       background-color: #000;  
       height: 34px;
       border-bottom: 1px solid #000;
-      padding: 6px;
+      
 
       &:nth-of-type(odd) {
         background-color: #666;
@@ -52,12 +53,17 @@ body {
       display: block;
       height: 50px;
       padding-top: 14px;
+
+      &:hover {
+        text-decoration: none;  
+      }
     }
 
     li {
+      @extend %padd--6;
+      background-color: #ccc;  
       border-bottom: 1px solid #000;
-      padding: 6px;
-
+      
       &:nth-of-type(odd) {
         background-color: #666;
       }
@@ -73,13 +79,13 @@ body {
   }
 
   .navleft1-02_img-holder {
+    @extend %padd--4;
     width: 50px;
     height: 50px;
     display: inline;
     float: left;
     margin-bottom: 4px;
     margin-right: 4px;
-    padding: 4px;
     border: 1px solid #000;
 
     > img {
