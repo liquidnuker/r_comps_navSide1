@@ -1,0 +1,15 @@
+/_tmp
+/_gh_pages
+*.DS_Store
+*.swp
+
+node_modules
+npm-debug.log
+gh_page.rb
+
+# sass
+*.css.map
+
+notes.txt
+
+
