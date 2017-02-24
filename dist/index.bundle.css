@@ -797,9 +797,8 @@ body {
 .navleft1-03 a {
   color: #fff;
   display: block; }
-
-.navleft1-03 span {
-  color: #fff; }
+  .navleft1-03 a:hover {
+    text-decoration: none; }
 
 .navleft1-03 li {
   background-color: #999;

@@ -103,16 +103,16 @@ body {
   a {
     color: #fff;
     display: block;
-  }
-  span {
-    color :#fff;
+
+    &:hover {
+      text-decoration: none;  
+    }
   }
 
   li {
     @extend %padd--6;
     background-color: #999;
-    border-bottom: 1px solid #000;
-    
+    border-bottom: 1px solid #000;    
 
     &:after,
     &:before {
