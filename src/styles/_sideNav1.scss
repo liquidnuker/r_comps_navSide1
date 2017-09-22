@@ -1,22 +1,14 @@
 // navSide101
 // ==================================================/
-@mixin navSide101 {
+@mixin navSide101_theme() {
   .navSide101 {
-    a {
-      display: block;
+    a {    
       color: #fff;
-
-      &:hover {
-        text-decoration: none;  
-      }
     }
 
     li {
-      @extend %padd--6;
       background-color: #000;  
-      height: 34px;
       border-bottom: 1px solid #000;
-
 
       &:nth-of-type(odd) {
         background-color: #666;
@@ -25,33 +17,47 @@
       &:first-of-type {
         background-color: green;
       }
+    }
+  }
+}
+@include navSide101_theme();
 
-      &:last-of-type {
-        border-bottom: none;
-      }
+.navSide101 {
+  .navSide101_heading {
+    @extend %padd--4;
+  }
+
+  a {
+    @extend %display--block;
+
+    &:hover {
+      text-decoration: none;  
+    }
+  }
+
+  li {
+    @extend %padd--6;
+    height: 34px;
+    
+    &:last-of-type {
+      border-bottom: none;
     }
   }
 }
 
-@include navSide101;
-
 // navSide102
 // ==================================================/
-@mixin navSide102 {
+@mixin navSide102_theme() {
   .navSide102 {
+    .navSide102_heading {
+      background-color: #fff;
+    }
+
     a {
       color: #fff;
-      display: block;
-      height: 50px;
-      padding-top: 14px;
-
-      &:hover {
-        text-decoration: none;  
-      }
     }
 
     li {
-      @extend %padd--6;
       background-color: #ccc;  
       border-bottom: 1px solid #000;
 
@@ -62,30 +68,50 @@
       &:first-of-type {
         background-color: pink;
       }
+    }
+    
+    .navSide102_img-holder {
+      border: 1px solid #000;
+    } 
+  }
+}
+@include navSide102_theme();
 
-      &:last-of-type {
-        border-bottom: none;
-      }
+.navSide102 {
+  .navSide102_heading {
+    @extend %padd--4;
+  }
+
+  li {
+    @extend %padd--4;
+    height: 50px;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  a {
+    @extend %display--block;
+    @include center-h--unk;
+       
+    &:hover {
+      text-decoration: none;  
     }
   }
 
   .navSide102_img-holder {
     @extend %padd--4;
-    width: 50px;
-    height: 50px;
-    display: inline;
+    @extend %margin-bottom--4;
+    height: 100%;
     float: left;
-    margin-bottom: 4px;
     margin-right: 4px;
-    border: 1px solid #000;
 
     > img {
-      height: 100%;
+      @extend %img--responsive;
     }
   }
 }
-
-@include navSide102;
 
 // navSide103
 // ==================================================/

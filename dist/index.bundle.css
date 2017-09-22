@@ -6,6 +6,9 @@
   .row:after, .navSide103 li:after {
     clear: both; }
 
+.navSide101 a, .navSide102 a {
+  display: block; }
+
 .btn {
   display: inline-block; }
 
@@ -28,11 +31,21 @@ input [type="button"],
   margin: 0;
   padding: 0; }
 
-.btn1-01, .navSide102_img-holder {
+.navSide102 .navSide102_img-holder {
+  margin-bottom: 4px; }
+
+.btn1-01, .navSide101 .navSide101_heading, .navSide102 .navSide102_heading, .navSide102 li, .navSide102 .navSide102_img-holder {
   padding: 4px; }
 
-.navSide101 li, .navSide102 li, .navSide103 li, .navSide104 li {
+.navSide101 li, .navSide103 li, .navSide104 li {
   padding: 6px; }
+
+.navSide102 .navSide102_img-holder > img {
+  display: block;
+  width: 100%;
+  /* optional */
+  max-width: 100%;
+  height: auto; }
 
 *,
 *:before,
@@ -798,29 +811,29 @@ input [type="button"],
     width: 8.33333333%; } }
 
 .navSide101 a {
-  display: block;
   color: #fff; }
-  .navSide101 a:hover {
-    text-decoration: none; }
 
 .navSide101 li {
   background-color: #000;
-  height: 34px;
   border-bottom: 1px solid #000; }
   .navSide101 li:nth-of-type(odd) {
     background-color: #666; }
   .navSide101 li:first-of-type {
     background-color: green; }
+
+.navSide101 a:hover {
+  text-decoration: none; }
+
+.navSide101 li {
+  height: 34px; }
   .navSide101 li:last-of-type {
     border-bottom: none; }
 
+.navSide102 .navSide102_heading {
+  background-color: #fff; }
+
 .navSide102 a {
-  color: #fff;
-  display: block;
-  height: 50px;
-  padding-top: 14px; }
-  .navSide102 a:hover {
-    text-decoration: none; }
+  color: #fff; }
 
 .navSide102 li {
   background-color: #ccc;
@@ -829,19 +842,28 @@ input [type="button"],
     background-color: #666; }
   .navSide102 li:first-of-type {
     background-color: pink; }
+
+.navSide102 .navSide102_img-holder {
+  border: 1px solid #000; }
+
+.navSide102 li {
+  height: 50px; }
   .navSide102 li:last-of-type {
     border-bottom: none; }
 
-.navSide102_img-holder {
-  width: 50px;
-  height: 50px;
-  display: inline;
+.navSide102 a {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .navSide102 a:hover {
+    text-decoration: none; }
+
+.navSide102 .navSide102_img-holder {
+  height: 100%;
   float: left;
-  margin-bottom: 4px;
-  margin-right: 4px;
-  border: 1px solid #000; }
-  .navSide102_img-holder > img {
-    height: 100%; }
+  margin-right: 4px; }
 
 .navSide103 a {
   color: #fff;
