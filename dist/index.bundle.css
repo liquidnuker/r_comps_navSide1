@@ -820,15 +820,19 @@ input [type="button"],
     width: 8.33333333%; } }
 
 .navSide101 a {
-  color: #fff; }
+  color: #d5d5d5; }
+  .navSide101 a:hover {
+    color: #fff; }
+
+.navSide101 .navSide101_heading {
+  background-color: #f0f0f0;
+  color: #141416; }
 
 .navSide101 li {
-  background-color: #000;
-  border-bottom: 1px solid #000; }
+  background-color: #2c2d32;
+  border-bottom: 1px solid #5c5d60; }
   .navSide101 li:nth-of-type(odd) {
-    background-color: #666; }
-  .navSide101 li:first-of-type {
-    background-color: green; }
+    background-color: #343437; }
 
 .navSide101 a:hover {
   text-decoration: none; }
@@ -839,7 +843,8 @@ input [type="button"],
     border-bottom: none; }
 
 .navSide102 .navSide102_heading {
-  background-color: #fff; }
+  background-color: #f0f0f0;
+  color: #141416; }
 
 .navSide102 a {
   color: #fff; }
