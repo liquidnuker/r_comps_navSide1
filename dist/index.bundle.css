@@ -842,20 +842,20 @@ input [type="button"],
   .navSide101 li:last-of-type {
     border-bottom: none; }
 
+.navSide102 a {
+  color: #d5d5d5; }
+  .navSide102 a:hover {
+    color: #fff; }
+
 .navSide102 .navSide102_heading {
   background-color: #f0f0f0;
   color: #141416; }
 
-.navSide102 a {
-  color: #fff; }
-
 .navSide102 li {
-  background-color: #ccc;
-  border-bottom: 1px solid #000; }
+  background-color: #2c2d32;
+  border-bottom: 1px solid #5c5d60; }
   .navSide102 li:nth-of-type(odd) {
-    background-color: #666; }
-  .navSide102 li:first-of-type {
-    background-color: pink; }
+    background-color: #343437; }
 
 .navSide102 .navSide102_img-holder {
   border: 1px solid #000; }

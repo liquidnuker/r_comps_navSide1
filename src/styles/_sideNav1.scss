@@ -54,25 +54,25 @@
 // ==================================================/
 @mixin navSide102_theme() {
   .navSide102 {
+    a {    
+      color: #d5d5d5;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
     .navSide102_heading {
       background-color: #f0f0f0;
       color: #141416;
     }
 
-    a {
-      color: #fff;
-    }
-
     li {
-      background-color: #ccc;  
-      border-bottom: 1px solid #000;
+      background-color: #2c2d32;  
+      border-bottom: 1px solid #5c5d60;
 
       &:nth-of-type(odd) {
-        background-color: #666;
-      }
-
-      &:first-of-type {
-        background-color: pink;
+        background-color: #343437;
       }
     }
     
