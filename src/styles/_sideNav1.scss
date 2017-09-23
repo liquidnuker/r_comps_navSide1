@@ -207,25 +207,26 @@
 // ==================================================/
 @mixin navSide104_theme() {
   .navSide104 {
+    .navSide104_heading {
+      background-color: #f0f0f0;
+      color: #141416;
+    }
+
     a {
-      color: #fff;
+      color: #d5d5d5;
+
+      &:hover {
+        color: #fff;
+      }
     }
 
     li {
-      background-color: #999;
-      border-bottom: 1px solid #000;
+      background-color: #2c2d32;
+      border-bottom: 1px solid #5c5d60;
 
       &:nth-of-type(odd) {
-        background-color: #666;
+        background-color: #343437;
       }
-
-      &:first-of-type {
-        background-color: green;
-      }
-
-      &:last-of-type {
-        border-bottom: none;
-      }  
     }
 
     .navSide104_img-holder {
@@ -240,6 +241,10 @@
 @include navSide104_theme();
 
 .navSide104 {
+  .navSide104_heading {
+    @extend %padd--4;
+  }
+
   a {
     @extend %display--block;
     height: 50px;
@@ -251,7 +256,11 @@
   }
 
   li {
-    @extend %padd--6;    
+    @extend %padd--6;  
+
+    &:last-of-type {
+      border-bottom: none;
+    }   
   }
 
   .navSide104_img-holder {
