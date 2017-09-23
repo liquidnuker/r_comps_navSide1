@@ -193,20 +193,43 @@
 
 // navSide104
 // ==================================================/
-@mixin navSide104 {
-// Horizontally and vertically centers block elements (andy.scss)
-// Important: you must have a parent element with `position: relative`.
-@mixin navSide104--center-both {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  @include prefix(transform, translate(-50%, -50%), 'webkit' 'ms');
+@mixin navSide104_theme() {
+  .navSide104 {
+    a {
+      color: #fff;
+    }
+
+    li {
+      background-color: #999;
+      border-bottom: 1px solid #000;
+
+      &:nth-of-type(odd) {
+        background-color: #666;
+      }
+
+      &:first-of-type {
+        background-color: green;
+      }
+
+      &:last-of-type {
+        border-bottom: none;
+      }  
+    }
+
+    .navSide104_img-holder {
+      border: 1px solid #000;
+
+      > span {
+        background-color: #ccc;
+      }
+    }
+  }   
 }
+@include navSide104_theme();
 
 .navSide104 {
   a {
-    color: #fff;
-    display: block;
+    @extend %display--block;
     height: 50px;
     padding-top: 14px;
 
@@ -216,51 +239,24 @@
   }
 
   li {
-    @extend %padd--6;
-    background-color: #999;
-    border-bottom: 1px solid #000;
-
-    &:nth-of-type(odd) {
-      background-color: #666;
-    }
-
-    &:first-of-type {
-      background-color: green;
-    }
-
-    &:last-of-type {
-      border-bottom: none;
-    }  
-  }
-}
-
-.navSide104_img-holder {
-  width: 50px;
-  height: 50px;
-  display: inline;
-  float: left;
-  margin-bottom: 4px;
-  margin-right: 4px;
-  position: relative;
-  text-align: center;
-  border: 1px solid #000;
-
-  > span {
-    // placeholder for fa
-    @include navSide104--center-both;
-    }
-
-  .fa {
-    background-color: #000;
-    width: 20px;
-    height: 20px;
+    @extend %padd--6;    
   }
 
+  .navSide104_img-holder {
+    @extend %pos--relative;
+    @extend %display--inline;
+    @extend %text--center;
+    @extend %margin-bottom--4;
+    float: left;
+    width: 50px;
+    height: 50px;    
+    margin-right: 4px;
+    
+    
+    > span {
+      @include center-both();
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
-}
-
-@include navSide104;
-
-// navleft1-05
-// ==================================================/
-// todo

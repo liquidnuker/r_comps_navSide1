@@ -6,11 +6,17 @@
   .row:after, .navSide103 li:after {
     clear: both; }
 
-.navSide101 a, .navSide102 a, .navSide103 a, .navSide103 .navSide103_img-holder {
+.navSide104 .navSide104_img-holder {
+  position: relative; }
+
+.navSide101 a, .navSide102 a, .navSide103 a, .navSide103 .navSide103_img-holder, .navSide104 a {
   display: block; }
 
 .btn {
   display: inline-block; }
+
+.navSide104 .navSide104_img-holder {
+  display: inline; }
 
 input, textarea, select, html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -31,7 +37,7 @@ input [type="button"],
   margin: 0;
   padding: 0; }
 
-.navSide102 .navSide102_img-holder, .navSide103 .navSide103_img-holder {
+.navSide102 .navSide102_img-holder, .navSide103 .navSide103_img-holder, .navSide104 .navSide104_img-holder {
   margin-bottom: 4px; }
 
 .btn1-01, .navSide101 .navSide101_heading, .navSide102 .navSide102_heading, .navSide102 li, .navSide102 .navSide102_img-holder, .navSide103 .navSide103_heading, .navSide103 li, .navSide103 .navSide103_img-holder {
@@ -39,6 +45,9 @@ input [type="button"],
 
 .navSide101 li, .navSide104 li {
   padding: 6px; }
+
+.navSide104 .navSide104_img-holder {
+  text-align: center; }
 
 .navSide102 .navSide102_img-holder > img {
   display: block;
@@ -893,12 +902,7 @@ input [type="button"],
     height: 100%; }
 
 .navSide104 a {
-  color: #fff;
-  display: block;
-  height: 50px;
-  padding-top: 14px; }
-  .navSide104 a:hover {
-    text-decoration: none; }
+  color: #fff; }
 
 .navSide104 li {
   background-color: #999;
@@ -910,25 +914,29 @@ input [type="button"],
   .navSide104 li:last-of-type {
     border-bottom: none; }
 
-.navSide104_img-holder {
+.navSide104 .navSide104_img-holder {
+  border: 1px solid #000; }
+  .navSide104 .navSide104_img-holder > span {
+    background-color: #ccc; }
+
+.navSide104 a {
+  height: 50px;
+  padding-top: 14px; }
+  .navSide104 a:hover {
+    text-decoration: none; }
+
+.navSide104 .navSide104_img-holder {
+  float: left;
   width: 50px;
   height: 50px;
-  display: inline;
-  float: left;
-  margin-bottom: 4px;
-  margin-right: 4px;
-  position: relative;
-  text-align: center;
-  border: 1px solid #000; }
-  .navSide104_img-holder > span {
+  margin-right: 4px; }
+  .navSide104 .navSide104_img-holder > span {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-  .navSide104_img-holder .fa {
-    background-color: #000;
+    transform: translate(-50%, -50%);
     width: 20px;
     height: 20px; }
 
