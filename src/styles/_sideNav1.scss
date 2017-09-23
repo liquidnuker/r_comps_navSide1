@@ -123,24 +123,29 @@
 // ==================================================/
 @mixin navSide103_theme() {
   .navSide103 {
-    .navSide103_heading {
-    
+    a {    
+      color: #fff;
+
+      &:hover {
+        color: #d5d5d5;
+      }
     }
 
-    a {
-      color: #fff;
+    .navSide103_heading {
+      background-color: #f0f0f0;
+      color: #141416;
     }
 
     li {
-      background-color: #999;
-      border-bottom: 1px solid #000;    
+      background-color: #2c2d32;
+      border-bottom: 1px solid #5c5d60;    
 
       &:nth-of-type(odd) {
-        background-color: #666;
+        background-color: #343437;
       }
 
-      &:first-of-type {
-        background-color: green;
+      p {
+        color: #d5d5d5;
       }
     }
 
@@ -158,6 +163,7 @@
 
   a {
     @extend %display--block;
+    @extend %font--bold;
     margin-bottom: 2px;
 
     &:hover {
@@ -178,7 +184,7 @@
     }
 
     &:last-of-type {
-      
+      border-bottom: none;
     }    
   }
 
