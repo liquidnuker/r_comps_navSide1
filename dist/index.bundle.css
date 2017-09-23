@@ -1,4 +1,4 @@
-.row, .navSide103 li:after, .navSide103 li:before {
+.row, .navSide103 li {
   *zoom: 1; }
   .row:before, .navSide103 li:before, .row:after, .navSide103 li:after {
     content: ' ';
@@ -6,7 +6,7 @@
   .row:after, .navSide103 li:after {
     clear: both; }
 
-.navSide101 a, .navSide102 a {
+.navSide101 a, .navSide102 a, .navSide103 a, .navSide103 .navSide103_img-holder {
   display: block; }
 
 .btn {
@@ -31,13 +31,13 @@ input [type="button"],
   margin: 0;
   padding: 0; }
 
-.navSide102 .navSide102_img-holder {
+.navSide102 .navSide102_img-holder, .navSide103 .navSide103_img-holder {
   margin-bottom: 4px; }
 
-.btn1-01, .navSide101 .navSide101_heading, .navSide102 .navSide102_heading, .navSide102 li, .navSide102 .navSide102_img-holder {
+.btn1-01, .navSide101 .navSide101_heading, .navSide102 .navSide102_heading, .navSide102 li, .navSide102 .navSide102_img-holder, .navSide103 .navSide103_heading, .navSide103 li, .navSide103 .navSide103_img-holder {
   padding: 4px; }
 
-.navSide101 li, .navSide103 li, .navSide104 li {
+.navSide101 li, .navSide104 li {
   padding: 6px; }
 
 .navSide102 .navSide102_img-holder > img {
@@ -866,10 +866,7 @@ input [type="button"],
   margin-right: 4px; }
 
 .navSide103 a {
-  color: #fff;
-  display: block; }
-  .navSide103 a:hover {
-    text-decoration: none; }
+  color: #fff; }
 
 .navSide103 li {
   background-color: #999;
@@ -878,19 +875,21 @@ input [type="button"],
     background-color: #666; }
   .navSide103 li:first-of-type {
     background-color: green; }
-  .navSide103 li:last-of-type {
-    border-bottom: none; }
 
-.navSide103_img-holder {
+.navSide103 .navSide103_img-holder {
+  border: 1px solid #000; }
+
+.navSide103 a {
+  margin-bottom: 2px; }
+  .navSide103 a:hover {
+    text-decoration: none; }
+
+.navSide103 .navSide103_img-holder {
+  float: left;
   width: 50px;
   height: 50px;
-  display: inline;
-  float: left;
-  margin-bottom: 4px;
-  margin-right: 4px;
-  padding: 4px;
-  border: 1px solid #000; }
-  .navSide103_img-holder > img {
+  margin-right: 4px; }
+  .navSide103 .navSide103_img-holder > img {
     height: 100%; }
 
 .navSide104 a {
